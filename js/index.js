@@ -42,10 +42,10 @@ for( let i=0; i<divs.length; i++ ){
   divs[i].addEventListener('click', capture, true);
 }
 
-// Stop Propogation
+// Stop Propagation
 const divs = document.querySelectorAll('div');
 function bubble(e){
-  e.stopPropogation();
+  e.stopPropagation();
   console.log(this.firstChild.nodeValue.trim() + ' bubbled');
 }
 
